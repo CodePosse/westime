@@ -10884,8 +10884,8 @@ textarea.form-control-lg {
 /* exceptions for pages */
 
 /* product */
-#product-page .brand {font-size: 1.75rem;}
-#product-page .price{ font-size:1.25rem;font-weight: bold; padding:5px 0;}
+#product-page .brand {font-size: 1.75rem;color:var(--bs-gray-dark)}
+#product-page .price{ font-size:1.25rem;font-weight: bold; padding:5px 0;color:var(--bs-gray-dark)}
 
 
 /* disposable for comps */
