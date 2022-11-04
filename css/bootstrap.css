@@ -10896,3 +10896,47 @@ textarea.form-control-lg {
   user-select: none;
   text-anchor: middle;
 }
+
+/* BUTTON EFFECT */
+
+.btn{
+  position: relative;
+  cursor:pointer;
+  user-select:none;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s; /* Safari */
+}
+        .btn:hover {
+  transition-duration: 0.1s;
+}
+
+.btn:after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 2em;
+  left: 0;
+  top:0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.5s;
+  box-shadow: 0 0 10px 20px palegreen;
+}
+
+.btn:active:after {
+  box-shadow: 0 0 0 0 greenyellow;
+  position: absolute;
+  border-radius: 2em;
+  left: 0;
+  top:0;
+  opacity: 1;
+  transition: 0s;
+}
+
+.btn:active {
+  top: 1px;
+}
