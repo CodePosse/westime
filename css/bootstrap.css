@@ -5,7 +5,7 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
- @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;1,300&family=Roboto:ital,wght@0,300;0,700;1,400&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;1,300&family=Maven+Pro&display=swap');
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -73,6 +73,8 @@
   --bs-link-hover-color: #0a58ca;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff3cd;
+  --sizzle:#d51243;
+  --wt-ltblue:#1d75ab;
 }
 
 *,
@@ -113,7 +115,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-bottom: 0.5rem;
   font-weight: 500;
   line-height: 1.2;
-  font-family: 'Jost', sans-serif;
+  font-family: 'Maven Pro', sans-serif;
 }
 
 h1, .h1 {
@@ -10884,8 +10886,9 @@ textarea.form-control-lg {
 /* exceptions for pages */
 
 /* product */
-#product-page .brand {font-size: 1.75rem;color:var(--bs-gray-dark)}
-#product-page .price{ font-size:1.25rem;font-weight: bold; padding:5px 0;color:var(--bs-gray-dark)}
+#product-page2 {background-color: #0d6efd12;}
+.brand {font-size: 1.75rem;color:var(--bs-gray-dark)}
+.price{ font-size:1.25rem;font-weight: bold; padding:5px 0;color:var(--bs-gray-dark)}
 
 
 /* disposable for comps */
@@ -10917,7 +10920,6 @@ textarea.form-control-lg {
   content: "";
   display: block;
   position: absolute;
-  border-radius: 2em;
   left: 0;
   top:0;
   width: 100%;
@@ -10930,7 +10932,6 @@ textarea.form-control-lg {
 .btn:active:after {
   box-shadow: 0 0 0 0 greenyellow;
   position: absolute;
-  border-radius: 2em;
   left: 0;
   top:0;
   opacity: 1;
@@ -10940,3 +10941,11 @@ textarea.form-control-lg {
 .btn:active {
   top: 1px;
 }
+.sizzle {color:var(--sizzle)}
+.bg-sizzle {background-color:var(--sizzle);color:white}
+.wt-ltblue {color:var(--wt-ltblue)}
+.bg-wt-ltblue {background-color:var(--wt-ltblue);color: white;}
+
+footer{background-color: var(--bs-gray-900);}
+footer *{color:#fff}
+.list-group, .list-group-item {background-color: transparent !important;}
